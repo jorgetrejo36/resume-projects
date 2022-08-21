@@ -9,7 +9,7 @@ To be able to run this application on your computer you will need the following:
 - node 14.17.1 or higher
 - mongoDB (locally installed on computer)
 
-## MongoDB will run on default port 27017
+*/*/ MongoDB will run on default port 27017 **
 
 ## Installation Steps
 1. Copy repository onto computer.
