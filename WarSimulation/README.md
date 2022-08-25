@@ -18,9 +18,8 @@ a.	Each player takes the top three cards from their deck and places them down in
 b.	The following card is then used to determine who wins this round of war. The person who wins the round of war then takes all the cards at stake and places them on the bottom of their pile in the order described in the first possibility (losing player card, winning player card, etc. until the card that determined who won war).
 
 ## Winning
-	If a player has all 52 cards in their deck they win.
-
-	Unique situations and how to play them
+If a player has all 52 cards in their deck they win.
+**Unique situations and how to play them**
 -	If war is currently in progress and the two players have the same value card again the war process is just repeated (placing three cards down and competing with the card thereafter).
 -	If war is in progress and one player does not have any more cards to do war with (either they don’t have three cards to place down or they don’t have the fourth card to compete with) they automatically lose.
 -	If extended war (a situation where the same value card continues to come up in war causing each player to place another three cards down until someone wins) is going on and both players’ do not have any more cards to play with the player with the most cards in their deck automatically wins.
