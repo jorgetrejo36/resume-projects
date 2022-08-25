@@ -34,6 +34,7 @@ If a player has all 52 cards in their deck they win.
 ## Statistics displayed in program
 The default amount of simulations run for the program is 10,000. The decks are also made randomly for each player. Given those factors this program will print out a breakdown of the percentage of times player one wins compared to player two, the percentage of games the player with the stronger deck won, and a breakdown of how many turns ended up being in the game. There is also a graphic that shows all of these turns. This is all printed onto the terminal at execution along with the graphic
 
+## Requirements
 To be able to run this program on your computer you will need the following:
 
 - Python 3.9.2 or higher
