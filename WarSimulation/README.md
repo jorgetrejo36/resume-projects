@@ -27,20 +27,20 @@ If a player has all 52 cards in their deck they win.
 -	In reverse war, each player takes the last card they can use and compares it with the other player. This continues (taking the next last card and then the next, so on and so forth) until one player has a higher valued card than the other signifying a win for the one with the higher valued card.
 -	In an even smaller chance, (something that never happened in any of this project’s simulations and is extremely improbable) if every single card compared in the reverse war is of the same value, then there is a draw. This is the only way to get a draw.
 
+## Important notes:
+-	During a sequence of war that is all considered one turn. For example, if war begins on turn 15 and the cards being compared are the same value yet again then the placing down of another three cards and battling again is still a part of turn 15.
+-	A deck’s strength is a summation of each card’s value (with ace being high) within a given deck. Numerically this means an ace was valued at 13, a two at 1, three at 2, and so and so forth. 
 
-To be able to run this application on your computer you will need the following:
+## Statistics displayed in program
+The default amount of simulations run for the program is 10,000. The decks are also made randomly for each player. Given those factors this program will print out a breakdown of the percentage of times player one wins compared to player two, the percentage of games the player with the stronger deck won, and a breakdown of how many turns ended up being in the game. There is also a graphic that shows all of these turns. This is all printed onto the terminal at execution along with the graphic
 
-- node 14 or higher
-- mongoDB (locally installed on computer)
+To be able to run this program on your computer you will need the following:
 
-*** MongoDB will run on default port 27017 ***
+- Python 3.9.2 or higher
 
 ## Installation Steps
 1. Copy repository onto computer.
-2. Open a terminal tab into this repo, BlogWebApp
-3. Run the command: "$ npm i". This will install all necessary npm packages.
+2. Go into the folder titled, WarSimulation
 
-## Opening the web application
-1. Run the command: "$ mongod". In a terminal tab to ensure an instance of MongoDB is active.
-2. In a seperate terminal tab (that is located at BlogWebApp) run: "$ node app.js".
-3. Go to a web browser (Google Chrome preferred) and open "localhost:3000".
+## Running the program
+1. Run the following command: $ python war_simulation.py
