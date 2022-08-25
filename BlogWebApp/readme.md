@@ -1,6 +1,6 @@
-# Simple Blog Web Application
+# Blog Web Application
 
-Description: This is a simple blog web app. On this web application you can create blogs which are locally saved in MongoDB. This web application uses HTML, CSS, Javascript, and EJS as well as several NPM packages.
+Description: This is a blog web app. On this web application you can create blogs which are locally saved in MongoDB. This web application uses HTML, CSS, Javascript, and EJS as well as several NPM packages.
 
 To be able to run this application on your computer you will need the following:
 
