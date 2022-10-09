@@ -5,9 +5,6 @@ Description: This is a blog web app. On this web application you can create blog
 To be able to run this application on your computer you will need the following:
 
 - node 14 or higher
-- mongoDB (locally installed on computer)
-
-*** MongoDB will run on default port 27017 ***
 
 ## Installation Steps
 1. Copy repository onto computer.
@@ -15,6 +12,5 @@ To be able to run this application on your computer you will need the following:
 3. Run the command: "$ npm i". This will install all necessary npm packages.
 
 ## Opening the web application
-1. Run the command: "$ mongod". In a terminal tab to ensure an instance of MongoDB is active.
-2. In a seperate terminal tab (that is located at BlogWebApp) run: "$ node app.js".
+1. In a terminal tab (that is located at BlogWebApp) run: "$ node app.js".
 3. Go to a web browser (Google Chrome preferred) and open "localhost:3000".
