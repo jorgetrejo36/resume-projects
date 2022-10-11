@@ -1,7 +1,7 @@
 # To-Do List implemented with EJS
 
 Description: This is a to-do list web app implemented with EJS. You are able to add and delete list items and they will automatically update.
-All list items will be saved locally with MongoDB. You can also create/access different lists by doing the following: localhost:3000/<new-list-name>.
+All list items will be saved locally with MongoDB. You can also create/access different lists by doing the following: localhost:3000/(new-list-name).
 This project uses the following technologies and languages: EJS, HTML, CSS, and Javascript along with several NPM packages.
 
 To be able to run this application on your computer you will need the following:
