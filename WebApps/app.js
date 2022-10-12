@@ -12,6 +12,8 @@ app.use(express.static("public"));
 
 mongoose.connect('mongodb+srv://jorgeTrejo:090901.Jt.090901@resumeprojects.n5likbk.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 
+// To-Do List Routing
+
 const itemSchema = new Schema({
   name: String
 });
@@ -40,9 +42,20 @@ const item3 = new Item({
 
 const defaultItems = [item1, item2, item3]
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html')
+})
+
+app.post('/', (req, res) => {
+    if (req.body.hasOwnProperty("toDo")){
+        res.redirect('/todo')
+    } else {
+        console.log("other website")
+    } 
+})
 
 // get all items from database
-app.get("/", (req, res) => {
+app.get("/todo", (req, res) => {
 
   Item.find((err, items) => {
     if (err) {
@@ -53,7 +66,7 @@ app.get("/", (req, res) => {
           console.log(error);
         }
       });
-      res.redirect('/');
+      res.redirect('/todo');
     } else {
       res.render("list", {listTitle: "Today", newListItems: items});
     }
@@ -61,7 +74,7 @@ app.get("/", (req, res) => {
 });
 
 // making individual unique lists
-app.get('/:listName', (req, res) => {
+app.get('/todo/:listName', (req, res) => {
   const listName = _.capitalize(req.params.listName);
 
   List.findOne({name: listName}, async (err, list) => {
@@ -75,7 +88,7 @@ app.get('/:listName', (req, res) => {
       
       await list.save();
 
-      res.redirect('/' + listName);
+      res.redirect('/todo' + listName);
     } else {
       res.render('list', {listTitle: listName, newListItems: list.items});
     }
@@ -83,7 +96,7 @@ app.get('/:listName', (req, res) => {
 });
 
 // post method for adding items to list
-app.post("/", async (req, res) => {
+app.post("/todo", async (req, res) => {
 
   const itemName = req.body.newItem;
   const listName = req.body.list;
@@ -94,7 +107,7 @@ app.post("/", async (req, res) => {
 
   if (listName == "Today") {
     await item.save();
-    res.redirect('/');
+    res.redirect('/todo');
   } else {
     List.findOne({name: listName}, async (err, list) => {
       if (err) {
@@ -102,14 +115,14 @@ app.post("/", async (req, res) => {
       } else {
         list.items.push(item);
         await list.save();
-        res.redirect("/" + listName);
+        res.redirect("/todo" + listName);
       }
     });
   }
 });
 
 // post method to delete an item once checked off
-app.post('/delete', async (req, res) => {
+app.post('/todo/delete', async (req, res) => {
   const checkedItemId = req.body.checkbox;
   const listName = req.body.listName;
 
@@ -120,18 +133,20 @@ app.post('/delete', async (req, res) => {
       }
     });
   
-    res.redirect('/');
+    res.redirect('/todo');
   } else {
     List.findOneAndUpdate({name: listName}, {$pull: {items: {_id: checkedItemId}}}, async (err, list) => {
       if (err) {
         console.log(err);
       } else {
-        res.redirect('/' + listName);
+        res.redirect('/todo' + listName);
       }
     });
   }
 });
 
+// Blog Web App Routing
+
 app.listen(port, () => {
-  console.log("Server has started successfully");
-});
+  console.log(`Web app listening on port ${port}`)
+})
