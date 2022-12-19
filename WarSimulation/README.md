@@ -45,3 +45,8 @@ To be able to run this program on your computer you will need the following:
 
 ## Running the program
 1. Run the following command: $ python war_simulation.py
+
+## Screenshots
+
+![alt text](https://github.com/jorgetrejo36/resume-projects/blob/main/WarSimulation/app-screenshots/terminalStats.png?raw=true)
+![alt text](https://github.com/jorgetrejo36/resume-projects/blob/main/WarSimulation/app-screenshots/statsDisplay.png?raw=true)
