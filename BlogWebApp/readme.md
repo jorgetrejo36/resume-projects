@@ -14,3 +14,5 @@ To be able to run this application on your computer you will need the following:
 ## Opening the web application
 1. In a terminal tab (that is located at BlogWebApp) run: "$ node app.js".
 3. Go to a web browser (Google Chrome preferred) and open "localhost:3000".
+
+!(https://raw.githubusercontent.com/jorgetrejo36/resume-projects/main/BlogWebApp/appScreenshots/HomePage.png)
