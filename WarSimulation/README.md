@@ -1,6 +1,6 @@
 # Simulation of the card game "War"
 
-Description: This program is a simulation of the famous card game of war. The rules for the game as used in the program are as follows.
+Description: This program is a simulation, made with Python, of the famous card game of war. The rules for the game as used in the program are as follows.
 
 ## Rules in War
 
