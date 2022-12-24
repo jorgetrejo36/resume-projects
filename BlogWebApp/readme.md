@@ -10,7 +10,7 @@ To be able to run this application on your computer you will need the following:
 ## Installation Steps
 1. Copy repository onto computer.
 2. Open a terminal tab into this repo, BlogWebApp
-3. Run the command: "$ npm build". This will install all necessary npm packages.
+3. Run the command: "$ npm run build". This will install all necessary npm packages.
 
 ## Opening the web application
 1. In a terminal start a MongoDB process with: "$ mongod"
