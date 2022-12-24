@@ -7,7 +7,7 @@ const { Schema } = mongoose;
 
 require('dotenv').config();
 
-mongoose.connect('mongodb+srv://jorgeTrejo:090901.Jt.090901@resumeprojects.n5likbk.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://127.0.0.1:27017', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const homeStartingContent = "This is a simple blog website where you can create blogs which are all saved locally. To add a new blog go to this URL: \"localhost:3000/compose\". To delete all blogs go to: \"localhost:3000/reset\".";
 const aboutContent = "This is an example about page. Any information pertaining to the origin of this blog website would be put here.";
