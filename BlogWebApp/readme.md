@@ -20,4 +20,4 @@ To be able to run this application on your computer you will need the following:
 ## Screenshots
 
 ![alt text](https://github.com/jorgetrejo36/resume-projects/blob/main/BlogWebApp/appScreenshots/HomePage.png?raw=true)
-![alt text](https://github.com/jorgetrejo36/resume-projects/blob/main/BlogWebApp/appScreenshots/ComposeBlogPage.png?raw=true)
+![alt text](https://github.com/jorgetrejo36/resume-projects/blob/main/BlogWebApp/appScreenshots/ComposeBlog.png?raw=true)
