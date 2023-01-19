@@ -4,7 +4,7 @@ Description: React app that shows all emojis and their respective names with dat
 
 ## Live Demo
 
-Click the following link to see a live demo of the application: https://resume-projects-6rok5ansi-jorgetrejo36.vercel.app/
+Click the following link to see a live demo of the application: https://resume-projects-r50ezhjlp-jorgetrejo36.vercel.app/
 
 ## Local Installation
 
