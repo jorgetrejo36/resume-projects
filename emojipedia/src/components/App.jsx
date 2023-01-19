@@ -2,8 +2,6 @@ import React from "react";
 import Entry from "./Entry";
 import * as emoji from "emoji-api";
 
-console.log(emoji.get("🥺").codepoints);
-
 const createEmojiCard = (emojiInfo, index) => (
   <Entry
     key={index}
